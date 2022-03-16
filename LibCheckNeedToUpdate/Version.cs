@@ -20,6 +20,7 @@
 			string x2 = string.Empty;
 			string y2 = string.Empty;
 			string z2 = string.Empty;
+			
 			try
             {
 				char[] vArr1 = currentVersion.ToCharArray();
