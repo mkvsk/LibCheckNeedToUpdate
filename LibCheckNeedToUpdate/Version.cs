@@ -56,7 +56,13 @@
 						counter2++;
 					}
 				}
-
+			}
+			catch
+			{	
+				Console.WriteLine("Input versions in right format x.x.x"); 
+			}
+			finally
+            {
 				int xV1 = int.Parse(x1);
 				int yV1 = int.Parse(y1);
 				int zV1 = int.Parse(z1);
@@ -65,16 +71,11 @@
 				int yV2 = int.Parse(y2);
 				int zV2 = int.Parse(z2);
 
-				if ((z1 is not null || y1 is not null || x1 is not null) && (z2 is not null || y2 is not null || x2 is not null)) 
+				if ((z1 is not null || y1 is not null || x1 is not null) && (z2 is not null || y2 is not null || x2 is not null))
 				{
 					IsNeedToUpdate(xV1, yV1, zV1, xV2, yV2, zV2);
 				}
-				
 			}
-			catch (InvalidDataException)
-			{	
-				Console.WriteLine("Input versions in right format x.x.x"); 
-			}			
         }
 
 		public bool IsNeedToUpdate(int xV1, int yV1, int zV1, int xV2, int yV2, int zV2)
