@@ -11,7 +11,7 @@
 			this.otherVersion = otherVersion;
 		}
 
-		public void DataToArr(string currentVersion, string otherVersion)
+		public void CheckData(string currentVersion, string otherVersion)
         {
 			string x1 = string.Empty;
 			string y1 = string.Empty;
@@ -71,7 +71,7 @@
 				}
 				
 			}
-			catch (Exception)
+			catch (InvalidDataException)
 			{	
 				Console.WriteLine("Input versions in right format x.x.x"); 
 			}			
