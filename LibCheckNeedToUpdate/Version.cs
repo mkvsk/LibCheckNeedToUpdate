@@ -77,7 +77,7 @@
 				}
 			}
         }
-
+		 
 		public bool IsNeedToUpdate(int xV1, int yV1, int zV1, int xV2, int yV2, int zV2)
 		{	 
 			if ((xV1 >= xV2 && yV1 >= yV2 && zV1 >= zV2)
